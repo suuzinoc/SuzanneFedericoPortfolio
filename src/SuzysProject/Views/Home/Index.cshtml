@@ -1,0 +1,102 @@
+
+<html ng-app="SuzysProject">
+<head>
+    <title>Suzanne Federico</title>
+
+    <link rel="shortcut icon" href="/images/Initials.jpg" width="100" />
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/projects.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <base href="/" />
+</head>
+<body ng-controller="AccountController as account">
+    <!---nav bar nav bar nav bar-->
+    <div>   
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="/"><img src="~/images/signature4.jpg" style="margin-left: 12px"/> </a>
+                    <a class="navbar-brand" href="#"></a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div style="margin-top: 25px">
+
+                    <ul class="list-unstyled list-inline">
+
+                        <li class="active"></li>
+                        <li><a class-="active" style="color:white" href="/handDrawn">Hand Drawn</a></li>
+                        <li><a style="color:white" href="/3D">3D Art</a></li>
+                        <li><a style="color:white" href="/computer">Computer Graphics</a></li>
+                        <li><a style="color:white" href="/projects">Projects</a></li>
+                        <li><a style="color:white" href="/aboutMe">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container header-styling">
+        <ui-view></ui-view>
+    </div>
+    <!--FOOTER FOOTER FOOTER FOOTER FOOTER-->
+    <div class="footer">
+        <div class="text-center">
+
+            <div class="text-center">
+                <div>
+                    <img src="~/images/signature.jpg" />
+                    <ul style="" class="list-unstyled text-center list-inline">
+                        <li class="active"></li>
+                        <li class="active"><a style="color:firebrick" href="/">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a style="color:firebrick" href="/handDrawn">Hand Drawn</a></li>
+                        <li><a style="color:firebrick" href="/3D">3D Art</a></li>
+                        <li><a style="color:firebrick" href="/computer">Computer Graphics</a></li>
+                        <li><a style="color:firebrick" href="/projects">Projects</a></li>
+                        <li><a style="color:firebrick" href="/aboutMe">About Me</a></li>
+                    </ul>
+                </div>
+
+                <a href="https://www.linkedin.com/in/suzanne-federico">
+                    <img title="LinkedIn" alt="LinkedIn" width="55" height="30" />
+                </a>
+            </div>
+            <div class="text-center"><h6>Copyright &copy; 2017</h6></div>
+            <div>
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </div
+
+    <!-- Library Files -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- App Files-->
+    <script src="/ngapp/app.js"></script>
+    <script src="/ngapp/controllers/controllers.js"></script>
+    <script src="/ngapp/services/services.js"></script>
+    <script src="~/ngApp/controllers/journalController.js"></script>
+    <script src="~/ngApp/services/journalServices.js"></script>
+
+    <!-- Security -->
+    <script src="/ngapp/controllers/accountcontroller.js"></script>
+    <script src="/ngapp/services/accountservice.js"></script>
+    <script src="~/ngApp/controllers/journalController.js"></script>
+    <script src="~/ngApp/services/journalServices.js"></script>
+</body>
+</html>

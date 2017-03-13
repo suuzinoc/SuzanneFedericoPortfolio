@@ -1,0 +1,234 @@
+﻿.content {
+
+  font-size: 48px;
+  line-height: 53px;
+  font-family: 'chewy', cursive; 
+  color: firebrick;
+  height: 160px;
+  overflow:hidden;
+}
+
+.visible {
+    font-weight: 600;
+    overflow: hidden;
+    height: 65px;
+    padding: 0 40px;
+}
+  
+  &:before {
+    content:'[';
+    left: 0;
+    line-height:45px;
+  }
+
+  &:after {
+    content:']';    
+    right: 0;
+    line-height:40px;
+  }
+
+&:after, &:before {
+    top: 0;
+    color: firebrick;
+    font-size: 42px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#scroller {
+  margin-top:0;
+
+  
+  list-style:none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#scrollLines {
+  line-height:60px;
+  margin:0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+#HomePage {
+    margin-top: -4%;
+    background-image: url('../images/buildings.jpg');
+    background-size: cover;
+    height: 120%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.marquee_code {
+    height: 100px;
+    width: 500px;
+    font-family: Arial;
+    font-size: 42pt;
+    color: white;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#HomePage {
+    margin-top: -4%;
+   
+    
+    height: 120%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+#detailsText {
+    margin-top: 50px;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+.circular-image-styling {
+        width: 150px;
+        height: 150px;
+    }
+
+#mainText {
+    font-size: 4.8em;
+}
+
+
+strong {
+    color: firebrick;
+}
+
+strong2 {
+    color: coral;
+}
+
+#scanFields {
+    padding:1%;
+    margin: 1%;
+}
+
+#directions {
+    padding: 1%;
+    margin: 5%;
+    background-color: azure;
+}
+
+/* Carousel */
+.carousel-caption {
+    z-index: 10 !important;
+}
+
+    .carousel-caption p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        z-index: 10 !important;
+    }
+
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #212B3A;
+        opacity: .7;
+        z-index: 1;
+    }
+
+    .marquee_code {
+        height: 100px;
+        width: 500px;
+        font-family: Arial;
+        font-size: 42pt;
+        color: white;
+    }
+
+    .words-wrapper {
+        display: inline-block;
+        position: relative;
+    }
+
+    .bannertext-lg {
+        font-size: 80px;
+        line-height: 1;
+        color: beige;
+    }
+
+   
+
+    .standard-page-styling {
+        margin-top: 25px;
+        margin-left: 100px;
+        font-size: medium;
+        margin-right: 300px;
+        font-family: sans-serif;
+        font-weight: bold;
+       
+    }
+
+   
+    .listLineHeight{
+        line-height: ;
+    }
+
+    .about-image-styling {
+        width: 650px;
+        height: 400px;
+    }
+
+    #wrapper {
+        text-align: center;
+        width: 1280px;
+        margin: 100px auto;
+    }
+
+  
+}
